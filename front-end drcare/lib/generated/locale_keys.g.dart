@@ -1,6 +1,6 @@
 // DO NOT EDIT. This is code generated via package:easy_localization/generate.dart
 
-abstract class LocaleKeys {
+abstract class  LocaleKeys {
   static const Medical_analysis = 'Medical_analysis';
   static const welcome_txt = 'welcome_txt';
   static const medical_test = 'medical_test';
@@ -32,4 +32,14 @@ abstract class LocaleKeys {
   static const personal_information_text = 'personal_information_text';
   static const last_results = 'last_results';
   static const wrong_input = 'wrong_input';
+  static const result_recommendation = 'result_recommendation';
+  static const your_final_result = 'your_final_result';
+  static const leukemia_true = 'leukemia_true';
+  static const leukemia_false = 'leukemia_false';
+  static const animea_true = 'animea_true';
+  static const anemia_false = 'anemia_false';
+  static const covid_true = 'covid_true';
+  static const covid_false = 'covid_false';
+  static const about_screen = 'about_screen';
+
 }

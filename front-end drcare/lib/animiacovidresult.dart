@@ -1,6 +1,8 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'dart:convert';
+import './generated/locale_keys.g.dart';
+import 'package:easy_localization/src/public_ext.dart';
 
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
@@ -64,7 +66,7 @@ Treating the underlying cause of bleeding
         endDrawer: DefaultDrawer(),
         appBar: AppBar(
           title: Text(
-            'Result & Recommendation',
+            LocaleKeys.result_recommendation.tr(),
             style: TextStyle(fontSize: 17.0),
           ),
           backgroundColor: ProjectColors.primary_color_blue,
@@ -82,7 +84,7 @@ Treating the underlying cause of bleeding
                     padding: const EdgeInsets.all(20.0),
                     child: Center(
                       child: Text(
-                        'Your Final Results Are ',
+                        LocaleKeys.your_final_result.tr(),
                         style: TextStyle(
                           fontSize: 23.0,
                           fontWeight: FontWeight.bold,
@@ -98,17 +100,17 @@ Treating the underlying cause of bleeding
                           padding: const EdgeInsets.all(10.0),
                           child: Text(
                             widget.person.hasLukemia
-                                ? 'Leukemia Found\n Go To The Doctor'
-                                : 'No Leukemia Found\n You Are Fine',
+                                ? LocaleKeys.leukemia_true.tr()
+                                : LocaleKeys.leukemia_false.tr(),
                             style: TextStyle(
-                              color: ProjectColors.button_text_color,
+                              color: Colors.black,
                               fontSize: 23.0,
                             ),
                           ),
                         ),
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20.0),
-                          color: ProjectColors.secondary_color,
+                          color: Colors.blue[100],
                         ),
                       )
                     : Column(
@@ -119,8 +121,8 @@ Treating the underlying cause of bleeding
                               padding: const EdgeInsets.all(10.0),
                               child: Text(
                                 widget.person.hasAnimea
-                                    ? 'Animea Found\n\n $recommendation'
-                                    : 'No Animea Found\n You Are Fine',
+                                    ? LocaleKeys.animea_true.tr()
+                                    : LocaleKeys.anemia_false.tr(),
                                 style: TextStyle(
                                   color: Colors.black,
                                   fontSize: 20.0,
@@ -141,8 +143,8 @@ Treating the underlying cause of bleeding
                               padding: const EdgeInsets.all(10.0),
                               child: Text(
                                 widget.person.hasCovid
-                                    ? 'Covid Found\nGo To The Doctor'
-                                    : 'No Covid Found\n You Are Fine',
+                                    ? LocaleKeys.covid_true.tr()
+                                    : LocaleKeys.covid_false.tr(),
                                 style: TextStyle(
                                   color: Colors.black,
                                   fontSize: 20.0,
@@ -159,32 +161,6 @@ Treating the underlying cause of bleeding
                 SizedBox(
                   height: 20.0,
                 ),
-                // Container(
-                //   alignment: Alignment.bottomCenter,
-                //   height: 50.0,
-                //   width: double.infinity,
-                //   child: MaterialButton(
-                //     onPressed: () {
-                //       Navigator.push(
-                //           context,
-                //           MaterialPageRoute(
-                //               builder: (context) => HomeScreen()));
-                //     },
-                //     child: Text(
-                //       'Home',
-                //       style: TextStyle(
-                //           fontSize: 25.0,
-                //           fontWeight: FontWeight.bold,
-                //           color: ProjectColors.button_text_color),
-                //     ),
-                //   ),
-                //   decoration: BoxDecoration(
-                //     borderRadius: BorderRadius.circular(
-                //       20.0,
-                //     ),
-                //     color: ProjectColors.primary_color_blue,
-                //   ),
-                // ),
                 Container(
                   width: double.infinity,
                   color: Colors.white,
@@ -200,7 +176,7 @@ Treating the underlying cause of bleeding
                                   builder: (context) => HomeScreen()));
                         },
                         child: Text(
-                          "Home",
+                          LocaleKeys.home.tr(),
                           style: TextStyle(
                               fontSize: 20.0,
                               fontWeight: FontWeight.bold,

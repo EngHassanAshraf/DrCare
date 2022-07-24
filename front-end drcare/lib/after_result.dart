@@ -116,7 +116,7 @@ class _AfterResultState extends State<AfterResult> {
                             );
                           },
                           child: Text(
-                            'Home',
+                            LocaleKeys.home.tr(),
                             style: TextStyle(
                                 fontSize: 20.0,
                                 fontWeight: FontWeight.bold,
