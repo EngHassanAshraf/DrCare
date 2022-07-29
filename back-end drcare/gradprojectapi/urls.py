@@ -5,9 +5,9 @@ from django.conf.urls.static import static
 
 
 urlpatterns = [
-    path('',include('routes.urls')),
+
     path('admin/', admin.site.urls),
     path('mainmodels/',include('mainmodels.urls'), name="mainmodels"),
     path('ocr/', include('ocr.urls'), name ='ocr'),
-    # path('expertsystem/',include('expertsys.urls'), name="expertsystem")
+    path('imagetranslation/', include('inimageocr.urls'), name='in image')
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

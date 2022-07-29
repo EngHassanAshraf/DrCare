@@ -42,10 +42,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'corsheaders',
-    'routes.apps.RoutesConfig',
     'mainmodels.apps.ModelConfig',
-    'ocr.apps.OcrConfig'
-    # 'expertsys',
+    'ocr.apps.OcrConfig',
+    'inimageocr.apps.InimageocrConfig',
 ]
 
 MIDDLEWARE = [

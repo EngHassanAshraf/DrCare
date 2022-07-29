@@ -3,7 +3,7 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from .models import AnalysisImage
 from .ocr import ocrDriver, get_result
-from .translation import translationDriver, get_translated_ocr
+from .ocrTranslation import translationDriver, get_translated_ocr
 from rest_framework.parsers import MultiPartParser
 class OCR(APIView):
     parser_classes = [MultiPartParser]

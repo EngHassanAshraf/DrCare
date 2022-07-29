@@ -270,8 +270,7 @@ class Routing(APIView):
                     'CallLeukemia':'http://192.168.1.4:8000/mainmodels/leukemiaclassify/',
                 }
             ]
-        )        
-    
+        )         
 # class CallAnemia(APIView):
 #     def get(self,request):
 #         finalResponse = {"Error": "Check Your Entered Data",

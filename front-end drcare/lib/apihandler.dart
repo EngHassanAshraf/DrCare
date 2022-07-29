@@ -88,7 +88,7 @@ class APIHandler {
       person.results.add(ResultModel.addNewValue(
           name: item['name'],
           translation: item['translation'],
-          value: double.parse(item['value'])));
+          strValue: item['value']));
     }
 
     return person;

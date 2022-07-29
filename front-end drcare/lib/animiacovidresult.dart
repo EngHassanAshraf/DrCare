@@ -35,21 +35,6 @@ class _AnimiaCovidResultState extends State<AnimiaCovidResult> {
     setState(() {});
   }
 
-  var recommendation =
-      """It is possible that you suffer from anemia, so our advice to you is to visit a hematologist.
-And before you go, you should know:
-1. Anemia occurs when you have a decreased level of hemoglobin in your red blood cells (RBCs)
-And until this time you should know:
-
-1. Diets that include the following foods can help treat or prevent iron deficiency:
--dark green, leafy vegetables
--dried fruits
--nuts
--iron-fortified cereals
-
-2. Additionally, vitamin C helps your body absorb iron. If you’re taking iron tablets, a doctor might suggest taking the tablets along with a source of vitamin C, such as a glass of orange juice or citrus fruit.
-Treating the underlying cause of bleeding
-""";
   DateTime timeBackPress = DateTime.now();
 
   @override
